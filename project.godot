@@ -13,7 +13,7 @@ config_version=5
 config/name="Projeto AV2 matematica discreta"
 run/main_scene="uid://1xjkemlfttha"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://sprite/icon.svg"
 
 [editor_plugins]
 

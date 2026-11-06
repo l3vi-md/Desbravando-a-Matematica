@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dppmkiofwgmu"]
 
-[ext_resource type="Script" uid="uid://ceu7ie7ytnke" path="res://africano1.gd" id="1_3l6pd"]
+[ext_resource type="Script" uid="uid://ceu7ie7ytnke" path="res://script/africano1.gd" id="1_3l6pd"]
 [ext_resource type="Texture2D" uid="uid://chp2mld3056tq" path="res://sprite/fase 3/africanoguy.png" id="2_3l6pd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_anonj"]

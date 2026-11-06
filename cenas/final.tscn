@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dew6a2ai0ckc0"]
 
 [ext_resource type="Texture2D" uid="uid://cy2pqm84t7svl" path="res://sprite/fase1/portalzinhoo.png" id="1_h0aww"]
-[ext_resource type="Script" uid="uid://cpktufdhajh53" path="res://final.gd" id="1_tvybu"]
+[ext_resource type="Script" uid="uid://cpktufdhajh53" path="res://script/final.gd" id="1_tvybu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tvybu"]
 size = Vector2(80.25, 114)

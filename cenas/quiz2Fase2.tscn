@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://nxqkiosxrfym"]
 
-[ext_resource type="Script" uid="uid://b6p8qdo15y70n" path="res://quiz2Fase2.gd" id="1_pvohb"]
+[ext_resource type="Script" uid="uid://b6p8qdo15y70n" path="res://script/quiz2Fase2.gd" id="1_pvohb"]
 [ext_resource type="Texture2D" uid="uid://dskjkm0oa8ero" path="res://sprite/fase1/chatbox.png" id="2_e06ts"]
 
 [node name="Node2D" type="Node2D" unique_id=1315806702]

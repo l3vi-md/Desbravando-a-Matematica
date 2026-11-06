@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://c1uyvvi5jrv6k" path="res://sprite/Tela das fases.png" id="3_lc61g"]
 [ext_resource type="Texture2D" uid="uid://dd0cg5cdjc4rn" path="res://sprite/fase 4/cadeadoFechado.png" id="4_fxylc"]
 [ext_resource type="Texture2D" uid="uid://5ofsvlkyyasq" path="res://sprite/fase 4/cadeadoAberto.png" id="5_k2xdh"]
-[ext_resource type="Texture2D" uid="uid://0uov80j62h6o" path="res://sprite/Barco.png" id="6_2s1xc"]
+[ext_resource type="Texture2D" uid="uid://0uov80j62h6o" path="res://sprite/fase 4/Barco.png" id="6_2s1xc"]
 [ext_resource type="Texture2D" uid="uid://cslq58qt7hi2a" path="res://sprite/fase 4/Pergaminho Desbravando a Matemática.png" id="7_6codr"]
 [ext_resource type="Texture2D" uid="uid://dynx4anoqvfqe" path="res://cenas/setaaa.png" id="8_dx3v3"]
 

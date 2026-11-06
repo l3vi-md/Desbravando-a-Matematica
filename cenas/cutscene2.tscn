@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bun45yy12g03o"]
 
-[ext_resource type="Script" uid="uid://cicu7ucsbiqqt" path="res://cutscene_2.gd" id="1_nsewc"]
+[ext_resource type="Script" uid="uid://cicu7ucsbiqqt" path="res://script/cutscene_2.gd" id="1_nsewc"]
 [ext_resource type="Texture2D" uid="uid://bu3ksf6j3wuoo" path="res://sprite/imagemChegadaFase01.png" id="2_vpmk2"]
 [ext_resource type="Texture2D" uid="uid://bj1u4r5bjln5s" path="res://sprite/fase1/butao3.png" id="3_2f4n6"]
 [ext_resource type="Texture2D" uid="uid://dskjkm0oa8ero" path="res://sprite/fase1/chatbox.png" id="4_nchri"]

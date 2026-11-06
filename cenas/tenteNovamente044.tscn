@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dyd5q185pm8en"]
 
-[ext_resource type="Script" uid="uid://dc2u68hi8g653" path="res://tenteNovamente044.gd" id="1_cbe4u"]
+[ext_resource type="Script" uid="uid://dc2u68hi8g653" path="res://script/tenteNovamente044.gd" id="1_cbe4u"]
 [ext_resource type="Texture2D" uid="uid://dskjkm0oa8ero" path="res://sprite/fase1/chatbox.png" id="2_ts1g5"]
 
 [node name="Node2D" type="Node2D" unique_id=1532176375]

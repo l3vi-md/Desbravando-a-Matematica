@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dqnv3uwhwi66y" path="res://cenas/color_rect.tscn" id="2_ujb4k"]
 [ext_resource type="Texture2D" uid="uid://dset2k0nrlds5" path="res://sprite/fase 2/Menu de Fases_ Aventura dos Conjuntos.png" id="3_t320n"]
 [ext_resource type="Texture2D" uid="uid://dd0cg5cdjc4rn" path="res://sprite/fase 4/cadeadoFechado.png" id="4_a7pla"]
-[ext_resource type="Texture2D" uid="uid://0uov80j62h6o" path="res://sprite/Barco.png" id="4_dqo1t"]
+[ext_resource type="Texture2D" uid="uid://0uov80j62h6o" path="res://sprite/fase 4/Barco.png" id="4_dqo1t"]
 [ext_resource type="Texture2D" uid="uid://5ofsvlkyyasq" path="res://sprite/fase 4/cadeadoAberto.png" id="5_661cc"]
 [ext_resource type="Texture2D" uid="uid://cslq58qt7hi2a" path="res://sprite/fase 4/Pergaminho Desbravando a Matemática.png" id="7_t320n"]
 [ext_resource type="Texture2D" uid="uid://dynx4anoqvfqe" path="res://cenas/setaaa.png" id="8_t320n"]

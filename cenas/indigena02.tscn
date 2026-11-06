@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cnyqmvdenc6bg"]
 
-[ext_resource type="Script" uid="uid://bf64erbilnemo" path="res://indigena02.gd" id="1_whs61"]
+[ext_resource type="Script" uid="uid://bf64erbilnemo" path="res://script/indigena02.gd" id="1_whs61"]
 [ext_resource type="Texture2D" uid="uid://buo3qtk8ll3u3" path="res://sprite/fase 2/indigena02.png" id="2_whs61"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_anonj"]

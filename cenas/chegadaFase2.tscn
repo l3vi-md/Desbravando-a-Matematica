@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://g8exaly844b2"]
 
-[ext_resource type="Script" uid="uid://cwysdvjiwwywx" path="res://chegadafase2.gd" id="1_1awkj"]
+[ext_resource type="Script" uid="uid://cwysdvjiwwywx" path="res://script/chegadafase2.gd" id="1_1awkj"]
 [ext_resource type="Texture2D" uid="uid://c76qds0pob0r7" path="res://sprite/fase 4/cutscenesFase2.png" id="2_2ykvj"]
 [ext_resource type="FontFile" uid="uid://cts3uwnv8d7mk" path="res://sprite/fase1/PressStart2P-Regular.ttf" id="3_skpag"]
 [ext_resource type="Texture2D" uid="uid://d3k6ki3ps8y1n" path="res://sprite/fase 2/Captura de tela 2026-10-22 173203.png" id="4_2ykvj"]

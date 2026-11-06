@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bw8ufqjneu288" path="res://cenas/indigena.tscn" id="7_binw8"]
 [ext_resource type="PackedScene" uid="uid://11x6vfwmv08j" path="res://cenas/player.tscn" id="8_binw8"]
 [ext_resource type="PackedScene" uid="uid://dew6a2ai0ckc0" path="res://cenas/final.tscn" id="9_eefc5"]
-[ext_resource type="Script" uid="uid://c4atasyd8h2do" path="res://esparduino.gd" id="10_llxwe"]
+[ext_resource type="Script" uid="uid://c4atasyd8h2do" path="res://script/esparduino.gd" id="10_llxwe"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eefc5"]
 texture = ExtResource("4_qe0rj")

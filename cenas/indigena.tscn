@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bw8ufqjneu288"]
 
 [ext_resource type="Texture2D" uid="uid://dptf338i5shi0" path="res://sprite/fase1/osindiohomi3.png" id="1_hb423"]
-[ext_resource type="Script" uid="uid://d0kfiwutlywni" path="res://indigena.gd" id="1_hji26"]
+[ext_resource type="Script" uid="uid://d0kfiwutlywni" path="res://script/indigena.gd" id="1_hji26"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_anonj"]
 size = Vector2(47, 77)

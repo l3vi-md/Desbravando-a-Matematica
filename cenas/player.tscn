@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://11x6vfwmv08j"]
 
-[ext_resource type="Script" uid="uid://x3tpot6uob55" path="res://player.gd" id="1_sweqy"]
+[ext_resource type="Script" uid="uid://x3tpot6uob55" path="res://script/player.gd" id="1_sweqy"]
 [ext_resource type="Texture2D" uid="uid://b0yb3lni3684" path="res://sprite/fase1/frente.png" id="2_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://dnr0ptme6ukhb" path="res://sprite/fase1/pulo2.png" id="2_sweqy"]
 [ext_resource type="Texture2D" uid="uid://cpwqni6fwchac" path="res://sprite/fase1/direita2.png" id="4_1jxqw"]
 [ext_resource type="Texture2D" uid="uid://8ijvw8qk48nx" path="res://sprite/fase1/lindinho1.png" id="4_2hs0m"]
-[ext_resource type="Script" uid="uid://dl3ll3vbgkc2i" path="res://animated_sprite_2d.gd" id="6_2hs0m"]
+[ext_resource type="Script" uid="uid://dl3ll3vbgkc2i" path="res://script/animated_sprite_2d.gd" id="6_2hs0m"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dw050"]
 animations = [{

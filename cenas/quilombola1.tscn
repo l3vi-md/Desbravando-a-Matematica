@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cwh8qhbxg0cfs"]
 
-[ext_resource type="Script" uid="uid://bf64erbilnemo" path="res://indigena02.gd" id="1_fplhe"]
+[ext_resource type="Script" uid="uid://bf64erbilnemo" path="res://script/indigena02.gd" id="1_fplhe"]
 [ext_resource type="Texture2D" uid="uid://cr10qcebqywil" path="res://sprite/fase 4/quilombola1.png" id="2_5xxr3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_anonj"]
