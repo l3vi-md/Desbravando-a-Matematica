@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://bun45yy12g03o"]
+
+[ext_resource type="Script" uid="uid://cicu7ucsbiqqt" path="res://cutscene_2.gd" id="1_nsewc"]
+[ext_resource type="Texture2D" uid="uid://bu3ksf6j3wuoo" path="res://sprite/imagemChegadaFase01.png" id="2_vpmk2"]
+[ext_resource type="Texture2D" uid="uid://bj1u4r5bjln5s" path="res://sprite/fase1/butao3.png" id="3_2f4n6"]
+[ext_resource type="Texture2D" uid="uid://dskjkm0oa8ero" path="res://sprite/fase1/chatbox.png" id="4_nchri"]
+[ext_resource type="FontFile" uid="uid://cts3uwnv8d7mk" path="res://sprite/fase1/PressStart2P-Regular.ttf" id="5_4fwpj"]
+[ext_resource type="Texture2D" uid="uid://r0x6p512cb6l" path="res://sprite/fase 2/Captura de tela 2026-10-22 172857.png" id="6_yd1hq"]
+
+[node name="Node2D" type="Node2D" unique_id=562788315]
+script = ExtResource("1_nsewc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2009245279]
+position = Vector2(565, 319)
+scale = Vector2(0.6860047, 0.68225294)
+texture = ExtResource("2_vpmk2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1521904346]
+position = Vector2(545.00006, 536)
+scale = Vector2(0.6877324, 0.78953487)
+texture = ExtResource("4_nchri")
+
+[node name="Label" type="Label" parent="Sprite2D2" unique_id=254940538]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1070.1838
+offset_top = -159.4293
+offset_right = -20.183838
+offset_bottom = -9.974228
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_4fwpj")
+theme_override_font_sizes/font_size = 14
+text = "
+objetivo:
+jonathan deve voltar a sua linha do tempo original,e para isso, 
+precisará  responder corretamente 3 perguntas 
+em cada parte da história que ele entrar.
+"
+horizontal_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1220321633]
+offset_left = 983.0
+offset_top = 573.0
+offset_right = 1107.0
+offset_bottom = 612.0
+texture_normal = ExtResource("3_2f4n6")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=481582042]
+position = Vector2(567, 85)
+scale = Vector2(1.4866667, 1.5438596)
+texture = ExtResource("6_yd1hq")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

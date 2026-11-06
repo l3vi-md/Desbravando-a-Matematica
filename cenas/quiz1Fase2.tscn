@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://det2kx2cn5ytu"]
+
+[ext_resource type="Script" uid="uid://c5k0b1bi0rrey" path="res://quiz1Fase2.gd" id="1_jp8hi"]
+[ext_resource type="Texture2D" uid="uid://dskjkm0oa8ero" path="res://sprite/fase1/chatbox.png" id="2_ye2i8"]
+
+[node name="Node2D" type="Node2D" unique_id=1315806702]
+position = Vector2(-1, 4)
+script = ExtResource("1_jp8hi")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=287140938]
+position = Vector2(572, 303)
+scale = Vector2(1.078067, 2.9906976)
+texture = ExtResource("2_ye2i8")
+
+[node name="Label" type="Label" parent="." unique_id=1061717657]
+offset_left = 45.0
+offset_top = 57.0
+offset_right = 832.0
+offset_bottom = 205.0
+theme_override_font_sizes/font_size = 38
+text = "questão 1:
+Dados os conjuntos A = {a, b, c}, B = {b, c, d} e C = {a, c, d, e}, 
+o conjunto (A - C) U (C - B) U (A ∩ B ∩ C) é:"
+
+[node name="Button" type="Button" parent="." unique_id=972752752]
+offset_left = 33.0
+offset_top = 464.0
+offset_right = 820.0
+offset_bottom = 554.0
+text = "   c) {b,c,d,e}"
+
+[node name="Button2" type="Button" parent="." unique_id=162479409]
+offset_left = 34.0
+offset_top = 368.0
+offset_right = 820.0
+offset_bottom = 460.0
+text = "b) A"
+
+[node name="Button3" type="Button" parent="." unique_id=1463220942]
+offset_left = 34.0
+offset_top = 264.0
+offset_right = 820.0
+offset_bottom = 365.0
+text = "a) {a, b, c, e}
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

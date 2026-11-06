@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://gotuueu64ukr"]
+
+[ext_resource type="Script" uid="uid://i3o12if85ro" path="res://finallllll.gd" id="1_f6xxr"]
+[ext_resource type="Texture2D" uid="uid://by1xfhi8tmv6u" path="res://sprite/fase 4/FINALLLL.png" id="2_he8fq"]
+[ext_resource type="Texture2D" uid="uid://dskjkm0oa8ero" path="res://sprite/fase1/chatbox.png" id="3_5dvxb"]
+[ext_resource type="FontFile" uid="uid://cts3uwnv8d7mk" path="res://sprite/fase1/PressStart2P-Regular.ttf" id="4_3s25p"]
+
+[node name="Node2D" type="Node2D" unique_id=1061236230]
+script = ExtResource("1_f6xxr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1391163140]
+position = Vector2(575.9734, 328.99997)
+scale = Vector2(0.67609155, 0.6889128)
+texture = ExtResource("2_he8fq")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=226777069]
+offset_left = 991.0
+offset_top = 592.0
+offset_right = 1118.0
+offset_bottom = 632.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=2147187153]
+position = Vector2(546.00006, 554)
+scale = Vector2(0.6877324, 0.78953487)
+texture = ExtResource("3_5dvxb")
+
+[node name="Label" type="Label" parent="Sprite2D2" unique_id=1717427990]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1060.0054
+offset_top = -136.63107
+offset_right = -10.005432
+offset_bottom = 12.824005
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_3s25p")
+theme_override_font_sizes/font_size = 14
+text = "passando novamente pelo portal,jhonathan finalmente voltou a sua linha 
+do tempo.Embora não tenha conseguido observar a história dos povos da linha 
+do tempo alternativa,o cientista voltou convicto de que poderia consertar a 
+maquina e poder experienciar a historia de maneira correta.
+"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

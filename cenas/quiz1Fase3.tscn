@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bw36ij6ouv2sd"]
+
+[ext_resource type="Script" uid="uid://b5w3mveb45vyv" path="res://cenas/quiz_1_fase_3.gd" id="1_c5tqb"]
+[ext_resource type="Texture2D" uid="uid://dskjkm0oa8ero" path="res://sprite/fase1/chatbox.png" id="1_xi10h"]
+
+[node name="Node2D" type="Node2D" unique_id=1315806702]
+position = Vector2(-1, 4)
+script = ExtResource("1_c5tqb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=287140938]
+position = Vector2(572, 303)
+scale = Vector2(1.078067, 2.9906976)
+texture = ExtResource("1_xi10h")
+
+[node name="Label" type="Label" parent="." unique_id=1061717657]
+offset_left = 25.0
+offset_top = 33.0
+offset_right = 1125.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 38
+text = "questão 1:
+Dados os conjuntos A = {a, b, c, d}, B = {b, c, d, e}, C = {a, c, f},
+ então:
+[(A - B) ∪ (B - C) ∪ (A ∩ B)] ∩ [(A ∩ C) ∪ (B ∩ A ∩ C)] é:"
+
+[node name="Button" type="Button" parent="." unique_id=972752752]
+offset_left = 33.0
+offset_top = 464.0
+offset_right = 820.0
+offset_bottom = 554.0
+text = "c) {a, b, c, d, e}"
+
+[node name="Button2" type="Button" parent="." unique_id=162479409]
+offset_left = 34.0
+offset_top = 368.0
+offset_right = 820.0
+offset_bottom = 460.0
+text = "b) {a, b, c, d}"
+
+[node name="Button3" type="Button" parent="." unique_id=1463220942]
+offset_left = 34.0
+offset_top = 264.0
+offset_right = 820.0
+offset_bottom = 365.0
+text = "a) {a, c}"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

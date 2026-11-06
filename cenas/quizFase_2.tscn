@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bewn60xr8332w"]
+
+[ext_resource type="Script" uid="uid://7vg3bx3nd7cq" path="res://quizFase2.gd" id="1_mwu06"]
+[ext_resource type="Texture2D" uid="uid://dskjkm0oa8ero" path="res://sprite/fase1/chatbox.png" id="2_0o1eu"]
+
+[node name="Node2D" type="Node2D" unique_id=1851144353]
+script = ExtResource("1_mwu06")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1482334492]
+position = Vector2(572, 303)
+scale = Vector2(1.078067, 2.9906976)
+texture = ExtResource("2_0o1eu")
+
+[node name="Button" type="Button" parent="." unique_id=1981414157]
+offset_left = 33.0
+offset_top = 464.0
+offset_right = 820.0
+offset_bottom = 554.0
+text = "c) O conjunto dos números ímpares entre 1 e 11."
+
+[node name="Button2" type="Button" parent="." unique_id=1856066081]
+offset_left = 34.0
+offset_top = 368.0
+offset_right = 820.0
+offset_bottom = 460.0
+text = "b) O conjunto de todos os números naturais menores que 10."
+
+[node name="Button3" type="Button" parent="." unique_id=830667649]
+offset_left = 34.0
+offset_top = 264.0
+offset_right = 820.0
+offset_bottom = 365.0
+text = "a) O conjunto dos números naturais pares menores que 12 e maiores que 0."
+
+[node name="Label" type="Label" parent="." unique_id=1151284978]
+offset_left = 24.0
+offset_top = 53.0
+offset_right = 1129.0
+offset_bottom = 201.0
+theme_override_font_sizes/font_size = 36
+text = "Questão 2 :
+Considere o conjunto A={2,4,6,8,10}. Qual alternativa descreve
+ corretamente os elementos desse conjunto?
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

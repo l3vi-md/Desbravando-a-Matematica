@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://ca6nb8xhvmarw"]
+
+[ext_resource type="Script" uid="uid://bentr27bke5b7" path="res://chegadaFase4.gd" id="1_ooflg"]
+[ext_resource type="Texture2D" uid="uid://4dma0uwk5rlc" path="res://sprite/fase 4/cutscene4.png" id="2_6tcsh"]
+[ext_resource type="Texture2D" uid="uid://64id0esrmi6f" path="res://sprite/fase 2/Captura de tela 2026-10-22 173222.png" id="3_ooflg"]
+[ext_resource type="Texture2D" uid="uid://dskjkm0oa8ero" path="res://sprite/fase1/chatbox.png" id="4_6jkdp"]
+[ext_resource type="FontFile" uid="uid://cts3uwnv8d7mk" path="res://sprite/fase1/PressStart2P-Regular.ttf" id="5_e7ecv"]
+
+[node name="Node2D" type="Node2D" unique_id=1061236230]
+script = ExtResource("1_ooflg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1391163140]
+position = Vector2(582, 326.99997)
+scale = Vector2(1.3727809, 1.3832976)
+texture = ExtResource("2_6tcsh")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=226777069]
+offset_left = 1011.0
+offset_top = 598.0
+offset_right = 1138.0
+offset_bottom = 638.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1917379296]
+position = Vector2(594.5, 102.25)
+scale = Vector2(0.7700965, 1.6044776)
+texture = ExtResource("3_ooflg")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=2060087378]
+position = Vector2(516, 530)
+scale = Vector2(0.73420084, 0.78953487)
+texture = ExtResource("4_6jkdp")
+
+[node name="Label" type="Label" parent="Sprite2D3" unique_id=162416842]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1070.1838
+offset_top = -159.4293
+offset_right = -20.183838
+offset_bottom = -9.974228
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_e7ecv")
+theme_override_font_sizes/font_size = 14
+text = "ao passar por outro portal,jhonathan se vê em uma região onde o povo
+ está sendo escravizado.Indignado,jhonathan 
+continua suas provações matemáticas para tentar voltar a linha 
+do tempo original, com o intuito de conseguir consertar a máquina e poder
+entender um pouco mais da luta daquele povo.
+"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

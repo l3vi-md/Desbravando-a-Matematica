@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://tmfpxg6ljp65"]
+
+[ext_resource type="Script" uid="uid://vutpclhg638g" path="res://quizFase_3.gd" id="1_71ddp"]
+[ext_resource type="Texture2D" uid="uid://dskjkm0oa8ero" path="res://sprite/fase1/chatbox.png" id="2_lj41g"]
+
+[node name="Node2D" type="Node2D" unique_id=323935479]
+script = ExtResource("1_71ddp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=25830320]
+position = Vector2(572, 303)
+scale = Vector2(1.078067, 2.9906976)
+texture = ExtResource("2_lj41g")
+
+[node name="Button" type="Button" parent="." unique_id=1661675486]
+offset_left = 33.0
+offset_top = 464.0
+offset_right = 820.0
+offset_bottom = 554.0
+text = "c) A letra e pertence ao conjunto B."
+
+[node name="Button2" type="Button" parent="." unique_id=236785766]
+offset_left = 34.0
+offset_top = 368.0
+offset_right = 820.0
+offset_bottom = 460.0
+text = "b) A letra b pertence ao conjunto B."
+
+[node name="Button3" type="Button" parent="." unique_id=1250411174]
+offset_left = 34.0
+offset_top = 264.0
+offset_right = 820.0
+offset_bottom = 365.0
+text = "a) O número 5 pertence ao conjunto B."
+
+[node name="Label" type="Label" parent="." unique_id=1530207799]
+offset_left = 25.0
+offset_top = 37.0
+offset_right = 1130.0
+offset_bottom = 193.0
+theme_override_font_sizes/font_size = 36
+text = "Questão 3 :
+Considere o conjunto B = {a,e,i,o,u}.
+ Sobre esse conjunto, assinale a alternativa correta."
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

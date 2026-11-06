@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cwh8qhbxg0cfs"]
+
+[ext_resource type="Script" uid="uid://bf64erbilnemo" path="res://indigena02.gd" id="1_fplhe"]
+[ext_resource type="Texture2D" uid="uid://cr10qcebqywil" path="res://sprite/fase 4/quilombola1.png" id="2_5xxr3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_anonj"]
+size = Vector2(42.5, 77)
+
+[node name="Area2D" type="Area2D" unique_id=1079162229]
+position = Vector2(83, 118)
+script = ExtResource("1_fplhe")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1158425863]
+position = Vector2(2.249997, 3.2499964)
+scale = Vector2(0.08253588, 0.06897927)
+texture = ExtResource("2_5xxr3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2031832564]
+position = Vector2(3.25, 9)
+shape = SubResource("RectangleShape2D_anonj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

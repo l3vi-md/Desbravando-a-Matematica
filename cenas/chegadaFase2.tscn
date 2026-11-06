@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://g8exaly844b2"]
+
+[ext_resource type="Script" uid="uid://cwysdvjiwwywx" path="res://chegadafase2.gd" id="1_1awkj"]
+[ext_resource type="Texture2D" uid="uid://c76qds0pob0r7" path="res://sprite/fase 4/cutscenesFase2.png" id="2_2ykvj"]
+[ext_resource type="FontFile" uid="uid://cts3uwnv8d7mk" path="res://sprite/fase1/PressStart2P-Regular.ttf" id="3_skpag"]
+[ext_resource type="Texture2D" uid="uid://d3k6ki3ps8y1n" path="res://sprite/fase 2/Captura de tela 2026-10-22 173203.png" id="4_2ykvj"]
+
+[node name="Node2D" type="Node2D" unique_id=1061236230]
+script = ExtResource("1_1awkj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1391163140]
+position = Vector2(582, 326.99997)
+scale = Vector2(1.3727809, 1.3832976)
+texture = ExtResource("2_2ykvj")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=226777069]
+offset_left = 1003.0
+offset_top = 588.0
+offset_right = 1130.0
+offset_bottom = 628.0
+
+[node name="Label" type="Label" parent="." unique_id=1012641280]
+offset_left = 176.0
+offset_top = 525.0
+offset_right = 816.0
+offset_bottom = 603.0
+theme_override_fonts/font = ExtResource("3_skpag")
+theme_override_font_sizes/font_size = 10
+text = "ao passar pelo portal, jonathan percebeu a diferença de tempo
+entre a primeira e a segunda linha do tempo.Mesmo que
+tenham-se passado milhares de anos,ele notou que a presença 
+daquela tribo ainda se mantia forte  e preservada,mesmo que 
+com dificuldades."
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=51195887]
+position = Vector2(609, 95)
+scale = Vector2(0.80385846, 1.6615384)
+texture = ExtResource("4_2ykvj")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

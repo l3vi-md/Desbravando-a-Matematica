@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://nxqkiosxrfym"]
+
+[ext_resource type="Script" uid="uid://b6p8qdo15y70n" path="res://quiz2Fase2.gd" id="1_pvohb"]
+[ext_resource type="Texture2D" uid="uid://dskjkm0oa8ero" path="res://sprite/fase1/chatbox.png" id="2_e06ts"]
+
+[node name="Node2D" type="Node2D" unique_id=1315806702]
+position = Vector2(-1, 4)
+script = ExtResource("1_pvohb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=287140938]
+position = Vector2(572, 303)
+scale = Vector2(1.078067, 2.9906976)
+texture = ExtResource("2_e06ts")
+
+[node name="Label" type="Label" parent="." unique_id=1061717657]
+offset_left = 28.0
+offset_top = 35.0
+offset_right = 995.0
+offset_bottom = 256.0
+theme_override_font_sizes/font_size = 38
+text = "questão 2:
+Dados os conjuntos 
+A = {1, 2, -1, 0, 4, 3, 5} e B = {-1, 4, 2, 0, 5, 7}, 
+assinale a afirmação verdadeira:"
+
+[node name="Button" type="Button" parent="." unique_id=972752752]
+offset_left = 33.0
+offset_top = 464.0
+offset_right = 820.0
+offset_bottom = 554.0
+text = "c) A ∩ B = {-1, 4, 2, 0, 5, 7, 3}"
+
+[node name="Button2" type="Button" parent="." unique_id=162479409]
+offset_left = 34.0
+offset_top = 368.0
+offset_right = 820.0
+offset_bottom = 460.0
+text = "b) A ∩ (B - A) = Ø"
+
+[node name="Button3" type="Button" parent="." unique_id=1463220942]
+offset_left = 34.0
+offset_top = 264.0
+offset_right = 820.0
+offset_bottom = 365.0
+text = "a) A U B = {2, 4, 0, -1}"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

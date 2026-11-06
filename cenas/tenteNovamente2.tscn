@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://daxqnekp4bthv"]
+
+[ext_resource type="Script" uid="uid://cikt0spub7xi4" path="res://tenteNovamente2.gd" id="1_68jxl"]
+[ext_resource type="Texture2D" uid="uid://dskjkm0oa8ero" path="res://sprite/fase1/chatbox.png" id="2_58qwx"]
+
+[node name="Node2D" type="Node2D" unique_id=1532176375]
+script = ExtResource("1_68jxl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=266998367]
+position = Vector2(567.00006, 298)
+scale = Vector2(1.078067, 2.9906976)
+texture = ExtResource("2_58qwx")
+
+[node name="Label" type="Label" parent="." unique_id=699446373]
+offset_left = 360.0
+offset_top = 224.0
+offset_right = 1465.0
+offset_bottom = 372.0
+theme_override_font_sizes/font_size = 36
+text = "você errou a questão"
+
+[node name="Button3" type="Button" parent="." unique_id=1098153775]
+offset_left = 444.0
+offset_top = 290.0
+offset_right = 609.0
+offset_bottom = 391.0
+text = "tente novamente
+"
+
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

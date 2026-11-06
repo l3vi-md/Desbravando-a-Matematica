@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dppmkiofwgmu"]
+
+[ext_resource type="Script" uid="uid://ceu7ie7ytnke" path="res://africano1.gd" id="1_3l6pd"]
+[ext_resource type="Texture2D" uid="uid://chp2mld3056tq" path="res://sprite/fase 3/africanoguy.png" id="2_3l6pd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_anonj"]
+size = Vector2(47, 77)
+
+[node name="Area2D" type="Area2D" unique_id=1079162229]
+position = Vector2(83, 118)
+script = ExtResource("1_3l6pd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1158425863]
+position = Vector2(0.500002, 9.500006)
+scale = Vector2(0.8166667, 0.6239317)
+texture = ExtResource("2_3l6pd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2031832564]
+position = Vector2(1, 9)
+shape = SubResource("RectangleShape2D_anonj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

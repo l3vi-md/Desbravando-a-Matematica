@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://1xjkemlfttha"]
+
+[ext_resource type="Texture2D" uid="uid://yag7t3fsyiys" path="res://sprite/fase 2/A Matemática à Beira-Mar (1).png" id="1_24di4"]
+[ext_resource type="PackedScene" uid="uid://dqnv3uwhwi66y" path="res://cenas/color_rect.tscn" id="2_ox3ib"]
+
+[sub_resource type="GDScript" id="GDScript_qtomq"]
+script/source = "extends Node2D
+
+func _ready() -> void:
+	pass 
+
+func _process(delta: float) -> void:
+	pass
+
+var button_type = null
+
+func _on_jogar_pressed() -> void:
+	#get_tree().change_scene_to_file()
+	button_type = \"jogar\"
+	$ColorRect.show()
+	$ColorRect/fade_time.start()
+	$ColorRect/AnimationPlayer.play(\"Fade_in\")
+	
+	pass
+
+func _on_fases_pressed() -> void:
+	#get_tree().change_scene_to_file()
+	pass 
+	button_type = \"fases\"
+	$ColorRect.show()
+	$ColorRect/fade_time.start()
+	$ColorRect/AnimationPlayer.play(\"Fade_in\")
+
+func _on_resumo_pressed() -> void:
+	pass
+	button_type = \"resumo\"
+	$ColorRect.show()
+	$ColorRect/fade_time.start()
+	$ColorRect/AnimationPlayer.play(\"Fade_in\")
+	get_tree().quit()
+	
+
+
+func _on_fade_time_timeout() -> void:
+	if button_type == \"jogar\" :
+		get_tree().change_scene_to_file(\"res://cenas/game.tscn\")
+	elif button_type == \"resumo\" :
+		get_tree().quit()
+	#elif button_type == \"fases\" :
+		#get_tree().change_scene_to_file()
+"
+
+[node name="game" type="Node2D" unique_id=1280564998]
+script = SubResource("GDScript_qtomq")
+
+[node name="TelaDeFundo" type="Sprite2D" parent="." unique_id=1192387886]
+position = Vector2(646.929, 330.31064)
+scale = Vector2(0.7673987, 0.6993392)
+texture = ExtResource("1_24di4")
+
+[node name="Gerenciador_de_butoes" type="Control" parent="." unique_id=291441579]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Jogar" type="TextureButton" parent="Gerenciador_de_butoes" unique_id=644053683]
+layout_mode = 0
+offset_left = 236.0
+offset_top = 136.0
+offset_right = 470.0
+offset_bottom = 196.0
+
+[node name="Resumo" type="TextureButton" parent="Gerenciador_de_butoes" unique_id=415299125]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 240.0
+offset_right = 454.0
+offset_bottom = 282.0
+
+[node name="ColorRect" parent="." unique_id=1211404916 instance=ExtResource("2_ox3ib")]
+visible = false
+offset_left = -2.0
+offset_top = -12.0
+offset_right = 1156.0
+offset_bottom = 667.0
+
+[node name="fade_time" type="Timer" parent="ColorRect" unique_id=2122198764]
+wait_time = 0.498
+
+[connection signal="pressed" from="Gerenciador_de_butoes/Jogar" to="." method="_on_jogar_pressed"]
+[connection signal="pressed" from="Gerenciador_de_butoes/Resumo" to="." method="_on_resumo_pressed"]
+[connection signal="timeout" from="ColorRect/fade_time" to="." method="_on_fade_time_timeout"]

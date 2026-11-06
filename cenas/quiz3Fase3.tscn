@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cu3igsp3ajbeq"]
+
+[ext_resource type="Texture2D" uid="uid://dskjkm0oa8ero" path="res://sprite/fase1/chatbox.png" id="1_ccepv"]
+[ext_resource type="Script" uid="uid://dkh471lya0mnm" path="res://cenas/quiz_3_fase_3.gd" id="1_dw8ob"]
+
+[node name="Node2D" type="Node2D" unique_id=1315806702]
+position = Vector2(-1, 4)
+script = ExtResource("1_dw8ob")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=287140938]
+position = Vector2(572, 303)
+scale = Vector2(1.078067, 2.9906976)
+texture = ExtResource("1_ccepv")
+
+[node name="Label" type="Label" parent="." unique_id=1061717657]
+offset_left = 36.0
+offset_top = 37.0
+offset_right = 1196.0
+offset_bottom = 258.0
+theme_override_font_sizes/font_size = 36
+text = "questão 3:
+Considere os conjuntos
+A = {1, 4, 7},B = {1, 3, 4, 5, 7, 8}.
+É correto afirmar que:"
+
+[node name="Button" type="Button" parent="." unique_id=972752752]
+offset_left = 33.0
+offset_top = 464.0
+offset_right = 820.0
+offset_bottom = 554.0
+text = "   c) B ⊅ A"
+
+[node name="Button2" type="Button" parent="." unique_id=162479409]
+offset_left = 34.0
+offset_top = 368.0
+offset_right = 820.0
+offset_bottom = 460.0
+text = "      b) B esta contido em A"
+
+[node name="Button3" type="Button" parent="." unique_id=1463220942]
+offset_left = 34.0
+offset_top = 264.0
+offset_right = 820.0
+offset_bottom = 365.0
+text = "    a) A esta contido em B"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

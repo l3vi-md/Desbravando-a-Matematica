@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://0pa5axfwggex"]
+
+[ext_resource type="Script" uid="uid://8nuakvnu1tfi" path="res://quiz2Fase4.gd" id="1_rmfdk"]
+[ext_resource type="Texture2D" uid="uid://dskjkm0oa8ero" path="res://sprite/fase1/chatbox.png" id="2_0012b"]
+
+[node name="Node2D" type="Node2D" unique_id=1315806702]
+position = Vector2(-1, 4)
+script = ExtResource("1_rmfdk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=287140938]
+position = Vector2(572, 303)
+scale = Vector2(1.078067, 2.9906976)
+texture = ExtResource("2_0012b")
+
+[node name="Label" type="Label" parent="." unique_id=1061717657]
+offset_left = 45.0
+offset_top = 57.0
+offset_right = 832.0
+offset_bottom = 205.0
+theme_override_font_sizes/font_size = 38
+text = "questão 2:
+Considere o conjunto B={a,b,c}. Quantos subconjuntos
+ próprios o conjunto B possui?"
+
+[node name="Button" type="Button" parent="." unique_id=972752752]
+offset_left = 33.0
+offset_top = 464.0
+offset_right = 820.0
+offset_bottom = 554.0
+text = "      C) 7 subconjuntos"
+
+[node name="Button2" type="Button" parent="." unique_id=162479409]
+offset_left = 34.0
+offset_top = 368.0
+offset_right = 820.0
+offset_bottom = 460.0
+text = "      b) 6 subconjuntos"
+
+[node name="Button3" type="Button" parent="." unique_id=1463220942]
+offset_left = 34.0
+offset_top = 264.0
+offset_right = 820.0
+offset_bottom = 365.0
+text = "       a) 8 subconjuntos"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

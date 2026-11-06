@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://clicxujv1f4u4"]
+
+[ext_resource type="Script" uid="uid://crtr604bk58pk" path="res://chegadaFase3.gd" id="1_dc8fm"]
+[ext_resource type="Texture2D" uid="uid://crie25bt4fjto" path="res://sprite/fase 4/cutscenesFase3.png" id="2_dc8fm"]
+[ext_resource type="FontFile" uid="uid://cts3uwnv8d7mk" path="res://sprite/fase1/PressStart2P-Regular.ttf" id="3_jo0kq"]
+[ext_resource type="Texture2D" uid="uid://cf0rfkdie6xiu" path="res://sprite/fase 2/Captura de tela 2026-10-22 173212.png" id="4_acew1"]
+
+[node name="Node2D" type="Node2D" unique_id=1061236230]
+script = ExtResource("1_dc8fm")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1391163140]
+position = Vector2(582, 326.99997)
+scale = Vector2(1.3727809, 1.3832976)
+texture = ExtResource("2_dc8fm")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=226777069]
+offset_left = 1011.0
+offset_top = 598.0
+offset_right = 1138.0
+offset_bottom = 638.0
+
+[node name="Label" type="Label" parent="." unique_id=1012641280]
+offset_left = 145.0
+offset_top = 540.0
+offset_right = 865.0
+offset_bottom = 618.0
+theme_override_fonts/font = ExtResource("3_jo0kq")
+theme_override_font_sizes/font_size = 10
+text = "complentando sua missão e passando pelo segundo portal,jonathan 
+percebeu que não estava mais nas terras da civilação anteior.Ele 
+então concluiu que estava na africa devido ao clima, a vegetação e
+ a predominacia de povos negros na região.Porém o problema da 
+matematica entrelaçada com a historia do local ainda era o mesmo."
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1771999200]
+position = Vector2(582.25, 110)
+scale = Vector2(0.96067417, 1.7878788)
+texture = ExtResource("4_acew1")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

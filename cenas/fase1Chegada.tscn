@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://bdp8sbg2oj2qe"]
+
+[ext_resource type="Texture2D" uid="uid://bu3ksf6j3wuoo" path="res://sprite/imagemChegadaFase01.png" id="1_1yy05"]
+[ext_resource type="Script" uid="uid://bu5dsa2ogo5oc" path="res://cenas/fase_1_chegada.gd" id="1_tkc7c"]
+[ext_resource type="FontFile" uid="uid://cts3uwnv8d7mk" path="res://sprite/fase1/PressStart2P-Regular.ttf" id="2_4v68f"]
+[ext_resource type="Texture2D" uid="uid://bj1u4r5bjln5s" path="res://sprite/fase1/butao3.png" id="3_e84sx"]
+[ext_resource type="Texture2D" uid="uid://r0x6p512cb6l" path="res://sprite/fase 2/Captura de tela 2026-10-22 172857.png" id="5_jna7n"]
+
+[node name="Node2D" type="Node2D" unique_id=562788315]
+script = ExtResource("1_tkc7c")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2009245279]
+position = Vector2(565, 319)
+scale = Vector2(0.6860047, 0.68225294)
+texture = ExtResource("1_1yy05")
+
+[node name="Label" type="Label" parent="." unique_id=254940538]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 204.0
+offset_top = 508.0
+offset_right = 824.0
+offset_bottom = 583.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_4v68f")
+theme_override_font_sizes/font_size = 10
+text = "jonathan,um cientista famoso pela criação da máquina do tempo,
+decidiu que como parte de suas férias,iria testar seu conheci-
+mento sobre a historia de uma região aleatória escolhido pela 
+máquina desenvolvida por ele.Entretanto,por conta de
+ uma falha,a mesma o levou para um multiverso onde 
+toda a história da região se baseava em matemática."
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=497797975]
+offset_left = 985.0
+offset_top = 574.0
+offset_right = 1109.0
+offset_bottom = 613.0
+texture_normal = ExtResource("3_e84sx")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1672572450]
+position = Vector2(564.5, 86.5)
+scale = Vector2(1.4966668, 1.4912277)
+texture = ExtResource("5_jna7n")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

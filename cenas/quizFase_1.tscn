@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://c1x6a8347ljw3"]
+
+[ext_resource type="Script" uid="uid://cnesgnvyq4to4" path="res://cenas/quiz_fase_1.gd" id="1_75a0k"]
+[ext_resource type="Texture2D" uid="uid://dskjkm0oa8ero" path="res://sprite/fase1/chatbox.png" id="1_arhqb"]
+
+[node name="Node2D" type="Node2D" unique_id=1315806702]
+position = Vector2(-1, 4)
+script = ExtResource("1_75a0k")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=287140938]
+position = Vector2(572, 303)
+scale = Vector2(1.078067, 2.9906976)
+texture = ExtResource("1_arhqb")
+
+[node name="Label" type="Label" parent="." unique_id=1061717657]
+offset_left = 33.0
+offset_top = 12.0
+offset_right = 1134.0
+offset_bottom = 289.0
+theme_override_font_sizes/font_size = 38
+text = "Questão 1 :
+Um conjunto é uma coleção de elementos que possuem
+ alguma característica em comum ou que são agrupados de 
+forma definida. Qual das alternativas representa um
+ conjunto bem definido?"
+
+[node name="Button" type="Button" parent="." unique_id=972752752]
+offset_left = 34.0
+offset_top = 487.0
+offset_right = 821.0
+offset_bottom = 576.0
+text = "c) O conjunto das comidas mais gostosas do mundo."
+
+[node name="Button2" type="Button" parent="." unique_id=162479409]
+offset_left = 34.0
+offset_top = 394.0
+offset_right = 821.0
+offset_bottom = 483.0
+text = "b) O conjunto dos números naturais menores que 6."
+
+[node name="Button3" type="Button" parent="." unique_id=1463220942]
+offset_left = 34.0
+offset_top = 300.0
+offset_right = 821.0
+offset_bottom = 389.0
+text = "a) O conjunto dos alunos mais inteligentes de uma escola."
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
